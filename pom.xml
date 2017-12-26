@@ -119,6 +119,24 @@
                     </tasks>
                 </configuration>
             </plugin>
+           
+             <plugin>
+                <groupId>com.google.appengine</groupId>
+                <artifactId>appengine-maven-plugin</artifactId>
+                <version>1.9.59</version>
+                <configuration>
+                    <appId>gwtapp-id</appId>
+                    <version>2-mvn-appengine</version>
+                    <enableJarClasses>false</enableJarClasses>
+                    <port>8181</port>
+                    <address>0.0.0.0</address>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.3.7.v20160115</version>
+            </plugin>
         </plugins>
     </build>
 </project>
